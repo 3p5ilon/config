@@ -33,7 +33,7 @@ cd vim-config
 cp .vimrc ~/.vimrc
 ```
 
-3. Install vim-plug (plugin manager):
+3. Install [vim-plug](https://github.com/junegunn/vim-plug) (plugin manager):
 
 ```bash
    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -44,11 +44,17 @@ cp .vimrc ~/.vimrc
 
 ```bash
 vim +PlugInstall +qall
-
 # Or run :PlugInstall inside Vim
 ```
 
-5. Add custom C++ snippets:
+5. Add [jellybeans](https://github.com/nanotech/jellybeans.vim) colorscheme:
+
+```bash
+mkdir -p ~/.vim/colors
+curl -o ~/.vim/colors/jellybeans.vim https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
+```
+
+6. Add custom C++ snippets:
 
 After step 4,`~/.vim` will be created with the plugin structure. Then add your custom snippets:
 
